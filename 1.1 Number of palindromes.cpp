@@ -5,16 +5,16 @@
 #include <set>
 using namespace std;
 
-(Ò»)
+(ä¸€)
 int mon[13]={-1,31,28,31,30,31,30,31,31,30,31,30,31}; 
-// ¼ì²éÊÇ·ñÊÇ»ØÎÄÊı
+// æ£€æŸ¥æ˜¯å¦æ˜¯å›æ–‡æ•°
 bool check2(int date)
 {
 	string s= to_string(date);
 	if(s[0]==s[7]&&s[1]==s[6]&&s[2]==s[5]&&s[3]==s[4])	return true;
 	return false;
  } 
- // ¼ì²éÊÇ·ñÊÇABABBABA»ØÎÄÊı
+ // æ£€æŸ¥æ˜¯å¦æ˜¯ABABBABAå›æ–‡æ•°
 bool check3(int date)
 {
 	string s=to_string(date);
@@ -51,7 +51,7 @@ bool check3(int date)
 	return 0;
  }
  */ 
-// (¶ş)
+// (äºŒ)
 /*int mon[13]={-1,31,28,31,30,31,30,31,31,30,31,30,31}; 
 string check(int date)
 {
@@ -64,7 +64,7 @@ string check(int date)
 	if(m<1||m>12||d<0||d>mon[m]) return "-1";
 	return n;
 }
- // ¼ì²éÊÇ·ñÊÇABABBABA»ØÎÄÊı
+ // æ£€æŸ¥æ˜¯å¦æ˜¯ABABBABAå›æ–‡æ•°
 string check3(string s)
 {
 	if(s[0]==s[2] && s[2]==s[5] && s[5]==s[7] && s[1]==s[3] && s[3]==s[4] && s[4]==s[6])	return s;
@@ -87,4 +87,5 @@ int main()
 		}
 	}
 	return 0;
+	//ä¸è¦å¿˜è®°æœ€åè¦return 0
 }
